@@ -13,6 +13,7 @@
 
 ![image](https://github.com/changelee82/CLZoomPickerView/raw/master/Demo.gif)
 
+
 使用方法
 
 可使用自动布局或代码添加该控件；
@@ -24,6 +25,7 @@
 实现代理方法。
 
 例子请参考代码。
+
 
 
 历史版本
