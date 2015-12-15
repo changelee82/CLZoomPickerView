@@ -4,7 +4,9 @@
 //
 //  Created by 李辉 on 15/12/13.
 //  Copyright © 2015年 李辉. All rights reserved.
+//  https://github.com/changelee82/CLZoomPickerView
 //
+
 
 #import "CLZoomPickerView.h"
 #import "CLStaticTextCell.h"
