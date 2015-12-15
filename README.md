@@ -2,10 +2,10 @@
 实现当前选项放大显示的选择器
 
 
-原作者：李辉
-邮箱：6545823@qq.com
-编译环境：Xcode 7.2
-运行环境：iOS 9.2 运行正常
+# 原作者：李辉
+# 邮箱：6545823@qq.com
+# 编译环境：Xcode 7.2
+# 运行环境：iOS 9.2 运行正常
 
 ![image](https://github.com/changelee82/CLZoomPickerView/raw/master/Demo.gif)
 
