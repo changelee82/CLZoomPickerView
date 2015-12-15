@@ -6,6 +6,7 @@
 邮箱：6545823@qq.com <br />
 编译环境：Xcode 7.2 <br />
 运行环境：iOS 9.2 运行正常 <br />
+您在使用该控件过程中，如有任何疑问或建议，请通过邮箱联系我，谢谢！ <br />
 
 <br />
 ![image](https://github.com/changelee82/CLZoomPickerView/raw/master/Demo.gif)
