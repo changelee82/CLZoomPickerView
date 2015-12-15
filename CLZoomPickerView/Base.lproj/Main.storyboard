@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5R6-cJ-1t7" customClass="CLZoomPickerView">
+                                <rect key="frame" x="150" y="40" width="300" height="300"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="haJ-5Y-uHX"/>
+                                    <constraint firstAttribute="height" constant="300" id="pQr-sp-L89"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dEH-K9-W8l">
+                                <rect key="frame" x="20" y="550" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="C7C-T5-HBI"/>
+                                    <constraint firstAttribute="width" constant="46" id="GPZ-eN-z0Z"/>
+                                </constraints>
+                                <state key="normal" title="上一行"/>
+                                <connections>
+                                    <action selector="buttonAClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ly6-yD-gNL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pie-iC-8Rr">
+                                <rect key="frame" x="30" y="504" width="24" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pd8-LV-voY">
+                                <rect key="frame" x="71" y="550" width="45" height="30"/>
+                                <state key="normal" title="下一行"/>
+                                <connections>
+                                    <action selector="buttonBClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yjN-3s-89S"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6be-HZ-oOm">
+                                <rect key="frame" x="131" y="550" width="45" height="30"/>
+                                <state key="normal" title="中间行"/>
+                                <connections>
+                                    <action selector="buttonCClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Myt-2p-esk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="高度" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQZ-uz-UMa">
+                                <rect key="frame" x="22" y="475" width="34" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Pd8-LV-voY" firstAttribute="leading" secondItem="dEH-K9-W8l" secondAttribute="trailing" constant="5" id="7p3-pP-9Cu"/>
+                            <constraint firstItem="Pie-iC-8Rr" firstAttribute="top" secondItem="qQZ-uz-UMa" secondAttribute="bottom" constant="8" id="AkA-ZC-JfQ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6be-HZ-oOm" secondAttribute="bottom" constant="20" id="Amj-Ii-Jd5"/>
+                            <constraint firstItem="dEH-K9-W8l" firstAttribute="top" secondItem="Pie-iC-8Rr" secondAttribute="bottom" constant="10" id="L6T-Xb-3aq"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dEH-K9-W8l" secondAttribute="bottom" constant="20" id="R9w-Xr-lkf"/>
+                            <constraint firstItem="5R6-cJ-1t7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="WXM-xC-ykh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Pd8-LV-voY" secondAttribute="bottom" constant="20" id="Wf9-KX-j06"/>
+                            <constraint firstItem="Pie-iC-8Rr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="WuH-lL-1rn"/>
+                            <constraint firstItem="qQZ-uz-UMa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="2" id="ZIy-9f-qk3"/>
+                            <constraint firstItem="6be-HZ-oOm" firstAttribute="leading" secondItem="Pd8-LV-voY" secondAttribute="trailing" constant="15" id="br1-4v-8Q7"/>
+                            <constraint firstItem="dEH-K9-W8l" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="e2f-Wo-cxU"/>
+                            <constraint firstItem="5R6-cJ-1t7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uMv-pm-i1n"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="displayTextLabel" destination="Pie-iC-8Rr" id="dPH-fQ-HIB"/>
+                        <outlet property="pickerView" destination="5R6-cJ-1t7" id="SXT-7c-Rx1"/>
+                        <outlet property="viewHeightLabel" destination="qQZ-uz-UMa" id="4c5-rb-ier"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

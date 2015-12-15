@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[CLZoomPickerView testA]:CLZoomPickerView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "cell.backgroundView.transform">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CLZoomPickerView tableView:cellForRowAtIndexPath:]:CLZoomPickerView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "_unselectedRowScale">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
