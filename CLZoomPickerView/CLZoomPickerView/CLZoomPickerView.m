@@ -25,6 +25,17 @@
 #pragma mark - 初始化
 
 /** 初始化方法，用于从代码中创建的类实例 */
+- (instancetype)init
+{
+    self = [super init];
+    if (self)
+    {
+        [self defaultInit];
+    }
+    return self;
+}
+
+/** 初始化方法，用于从代码中创建的类实例 */
 - (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
