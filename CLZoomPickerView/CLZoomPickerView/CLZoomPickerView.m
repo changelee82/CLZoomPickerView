@@ -328,6 +328,14 @@
     }
 }
 
+/** 重新加载数据源 */
+- (void)reloadData
+{
+    [self.tableView reloadData];
+    [self refreshPickerView:0];
+}
+
+
 
 #pragma mark - tableView 数据源
 

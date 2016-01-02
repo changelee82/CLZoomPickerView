@@ -51,6 +51,10 @@
 /** CLZoomPickerView实际占用的高度 */
 @property (nonatomic, readonly, assign) CGFloat fitHeight;
 
+
+/** 重新加载数据源 */
+- (void)reloadData;
+
 /** 通过行序号，选择指定行 */
 - (void)selectRow:(NSInteger)row animated:(BOOL)animated;
 
